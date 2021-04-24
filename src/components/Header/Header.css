@@ -1,0 +1,61 @@
+:root{
+    /* --primary: #01164F;
+    --secondary: #F3B11A; */
+    --primary: #1F2125;
+    --secondary: #F5B353;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background: #cdcdcd;
+    /* display: none; */
+}
+
+body::-webkit-scrollbar-thumb{
+    border-radius: 25px;
+    background: var(--primary);
+}
+
+header{
+    height: 50vh;
+    background: var(--primary);
+    color: var(--secondary);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > div{
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+main{
+    display: flex;
+
+    width: 95%;
+    margin: 2rem auto;
+}
+
+@media only screen and (max-width: 767px){
+    header{
+        height: 20vh;
+    }
+    header > div {
+        font-size: 2rem;
+    }
+}
